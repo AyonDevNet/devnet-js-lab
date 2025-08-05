@@ -1,7 +1,7 @@
 
 
 document.getElementById("add-btn").addEventListener("click", function () {
-  const task = document.getElementById("task-input").value.trim(); // ✅ correct property: value
+  const task = document.getElementById("task-input").value.trim(); 
   const todoList = document.getElementById("todo-list");
 
   if (task === "") {
@@ -15,14 +15,14 @@ document.getElementById("add-btn").addEventListener("click", function () {
   const deletbtn = document.createElement("button");
   deletbtn.textContent = "❌";
 
-  deletbtn.addEventListener("click", function () { // ✅ fixed typo: "click"
-    todoList.removeChild(creatLi); // ✅ remove the actual <li> element
+  deletbtn.addEventListener("click", function () {
+    todoList.removeChild(creatLi); 
   });
 
   creatLi.appendChild(deletbtn);
-  todoList.appendChild(creatLi); // ✅ correct variable name
+  todoList.appendChild(creatLi); 
 
-  document.getElementById("task-input").value = ""; // ✅ clears input
+  document.getElementById("task-input").value = ""; 
 });
 
 
