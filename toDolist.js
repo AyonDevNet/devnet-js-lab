@@ -1,29 +1,42 @@
+document.getElementById("add-btn").addEventListener("click", function(){
 
+ const task =document.getElementById("task-input").value.trim();
+ const todolist = document.getElementById("todo-list");
+ 
 
-document.getElementById("add-btn").addEventListener("click", function () {
-  const task = document.getElementById("task-input").value.trim(); 
-  const todoList = document.getElementById("todo-list");
+ if (task === "") {
+  alert ("Please input your command")
+  return;
+ }
 
-  if (task === "") {
-    alert("Please put your information");
-    return;
-  }
+ const creatLi = document.createElement("li");
+ creatLi.textContent = task;
 
-  const creatLi = document.createElement("li");
-  creatLi.textContent = task;
+  const deltebtn = document.createElement("button");
+  deltebtn.textContent = "❌";
 
-  const deletbtn = document.createElement("button");
-  deletbtn.textContent = "❌";
+  deltebtn.addEventListener("click", function(){
+     
+    todolist.removeChild(creatLi)
 
-  deletbtn.addEventListener("click", function () {
-    todoList.removeChild(creatLi); 
   });
 
-  creatLi.appendChild(deletbtn);
-  todoList.appendChild(creatLi); 
+ 
+  creatLi.appendChild(deltebtn);
+  todolist.appendChild(creatLi);
 
-  document.getElementById("task-input").value = ""; 
+  
+document.getElementById("task-input").value = ""
+
+
+
+
+
+
+
+
+
+
+
+
 });
-
-
-
