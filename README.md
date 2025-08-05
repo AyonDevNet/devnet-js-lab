@@ -16,15 +16,7 @@ As a DevOps & Network Engineer stepping deep into full-stack territory, this is 
 
 > 💬 _“Learn like a student. Build like a pro. Repeat.”_
 
-## 🧩 What's inside
 
-| Folder/File           | Description                         |
-|-----------------------|-------------------------------------|
-| `/01_basics`          | JS fundamentals (variables, loops)  |
-| `/02_dom`             | DOM manipulation & event handling   |
-| `/03_projects`        | Small apps (to-do, timers, forms)   |
-| `/snippets`           | Reusable code bits I like           |
-| `README.md`           | You're reading it 😉                |
 
 ## 📈 Status
 
