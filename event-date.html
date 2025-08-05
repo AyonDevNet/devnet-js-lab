@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Click here to see date</h2>
+<p id="demo"></p>
+
+<button id ="date-btn"> Date </button>
+
+<button id ="btn-clock"> Digital time </button>
+
+
+
+<script>
+ 
+  
+  document.getElementById("date-btn").addEventListener("click" , function timeZone (){
+                  
+    document.getElementById("demo").innerHTML= Date()
+
+  });
+ 
+ 
+  document.getElementById("btn-clock").addEventListener("click" , function timeZone (){
+                  
+     setInterval (function(){
+      
+        document.getElementById("demo").innerHTML= new Date().toLocaleTimeString();
+
+     },1000);
+
+
+});
+
+
+
+
+  
+    
+
+
+
+
+
+</script>
+</body>
+</html>

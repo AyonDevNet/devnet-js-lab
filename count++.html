@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Simple Counter</h1>
+    <p id="display">0</p>
+    
+    <button  id="myButton">Click Me</button>
+        <button  id="myButton2">back</button>
+        <button  id="resetbtn">Reset</button>
+
+
+    <script>
+
+    let count = 0;
+    document.getElementById("myButton").addEventListener('click' , function increment(){
+
+        count++;
+        document.getElementById("display").innerHTML=count;
+    });
+
+
+
+    document.getElementById("myButton2").addEventListener('click' , function decline(){
+     
+        count--
+
+        document.getElementById('display').innerHTML=count;
+
+    })
+
+     document.getElementById("resetbtn").addEventListener('click' , function resetsys(){
+     
+      
+        document.getElementById("display").innerHTML=count;
+
+
+     });
+
+      function updateColor() {
+        if (count > 0) {
+          display.style.color = "green";
+        } else if (count < 0) {
+          display.style.color = "red";
+        } else {
+          display.style.color = "black";
+        }
+      }
+  
+
+    </script>
+</body>
+</html>
