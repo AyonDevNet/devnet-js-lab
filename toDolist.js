@@ -28,15 +28,4 @@ document.getElementById("add-btn").addEventListener("click", function(){
   
 document.getElementById("task-input").value = ""
 
-
-
-
-
-
-
-
-
-
-
-
 });
