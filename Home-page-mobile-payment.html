@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payooo UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray-50">
+
+  <!-- Main Wrapper to center everything -->
+  <div class="flex justify-center items-center min-h-screen">
+    <div class="flex flex-col items-center gap-6 w-full max-w-2xl">
+
+      <!-- Balance Section -->
+      <div class="flex justify-between items-center bg-base-100 shadow-md rounded-2xl p-4 w-full">
+        <div>
+          <h2 class="text-xl font-bold">$45000</h2>
+          <p class="text-sm text-gray-500">Available Balance</p>
+        </div>
+        <button class="btn btn-outline rounded-xl flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6a2 2 0 012 2v1" />
+          </svg>
+          Log Out
+        </button>
+      </div>
+
+      <!-- Welcome Section -->
+      <div class="bg-base-100 shadow-md rounded-2xl p-6 w-full text-center">
+        <h1 class="text-2xl font-bold mb-2 flex justify-center items-center gap-2">
+          <span>🔥</span> Welcome to Payooo!
+        </h1>
+        <p class="text-gray-600 mb-6">
+          Enjoy easy and convenient financial services with us. <br>
+          Cashout charge is low and
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="card bg-base-100 shadow-md rounded-2xl p-4 flex flex-col items-center hover:shadow-lg transition">
+            <img src="./assets/wallet1.png" class="w-10 mb-2" alt="">
+            <h2 class="font-medium">Add Money</h2>
+          </div>
+          <div class="card bg-base-100 shadow-md rounded-2xl p-4 flex flex-col items-center hover:shadow-lg transition">
+            <img src="./assets/send1.png" class="w-10 mb-2" alt="">
+            <h2 class="font-medium">Cashout</h2>
+          </div>
+          <div class="card bg-base-100 shadow-md rounded-2xl p-4 flex flex-col items-center hover:shadow-lg transition">
+            <img src="./assets/money1.png" class="w-10 mb-2" alt="">
+            <h2 class="font-medium">Transfer Money</h2>
+          </div>
+          <div class="card bg-base-100 shadow-md rounded-2xl p-4 flex flex-col items-center hover:shadow-lg transition">
+            <img src="./assets/bonus1.png" class="w-10 mb-2" alt="">
+            <h2 class="font-medium">Get Bonus</h2>
+          </div>
+          <div class="card bg-base-100 shadow-md rounded-2xl p-4 flex flex-col items-center hover:shadow-lg transition">
+            <img src="./assets/purse1.png" class="w-10 mb-2" alt="">
+            <h2 class="font-medium">Pay Bill</h2>
+          </div>
+          <div class="card bg-base-100 shadow-md rounded-2xl p-4 flex flex-col items-center hover:shadow-lg transition">
+            <img src="./assets/transaction1.png" class="w-10 mb-2" alt="">
+            <h2 class="font-medium">Transactions</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latest Payment Section -->
+      <div class="card bg-base-100 shadow-md rounded-2xl w-full">
+        <div class="flex justify-between items-center border-b px-4 py-2">
+          <h2 class="font-bold text-lg">Latest Payment</h2>
+          <a href="#" class="text-sm text-gray-500 hover:underline">View All</a>
+        </div>
+        <div class="p-4 space-y-3">
+          <div class="flex items-center justify-between bg-base-100 rounded-xl shadow-sm p-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">💳</div>
+              <div>
+                <p class="font-semibold">Electricity Bill</p>
+                <p class="text-xs text-gray-500">Today 01:44 AM</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-xs">⋮</button>
+          </div>
+          <div class="flex items-center justify-between bg-base-100 rounded-xl shadow-sm p-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">🏦</div>
+              <div>
+                <p class="font-semibold">Bank Deposit</p>
+                <p class="text-xs text-gray-500">Today 01:44 AM</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-xs">⋮</button>
+          </div>
+          <div class="flex items-center justify-between bg-base-100 rounded-xl shadow-sm p-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">📱</div>
+              <div>
+                <p class="font-semibold">Mobile Recharge</p>
+                <p class="text-xs text-gray-500">Today 01:44 AM</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-xs">⋮</button>
+          </div>
+          <div class="flex items-center justify-between bg-base-100 rounded-xl shadow-sm p-3">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">🔥</div>
+              <div>
+                <p class="font-semibold">Gas Bill</p>
+                <p class="text-xs text-gray-500">Today 01:44 AM</p>
+              </div>
+            </div>
+            <button class="btn btn-ghost btn-xs">⋮</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
