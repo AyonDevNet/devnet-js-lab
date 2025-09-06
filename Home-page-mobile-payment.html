@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Payooo UI</title>
+  <title> Mobile Payment</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
@@ -15,8 +15,8 @@
 
       <!-- Balance Section -->
       <div class="flex justify-between items-center bg-base-100 shadow-md rounded-2xl p-4 w-full">
-        <div>
-          <h2 class="text-xl font-bold">$45000</h2>
+        <div >
+          <span ><h2 class="text-xl font-bold"  id="AddBalance">45000</h2></span>
           <p class="text-sm text-gray-500">Available Balance</p>
         </div>
         <button class="btn btn-outline rounded-xl flex items-center gap-2">
@@ -30,7 +30,7 @@
       <!-- Welcome Section -->
       <div class="bg-base-100 shadow-md rounded-2xl p-6 w-full text-center">
         <h1 class="text-2xl font-bold mb-2 flex justify-center items-center gap-2">
-          <span>🔥</span> Welcome to Payooo!
+          <span></span> Welcome to Mobile Payment!
         </h1>
         <p class="text-gray-600 mb-6">
           Enjoy easy and convenient financial services with us. <br>
@@ -65,57 +65,25 @@
       </div>
 
       <!-- Latest Payment Section -->
-      <div class="card bg-base-100 shadow-md rounded-2xl w-full">
-        <div class="flex justify-between items-center border-b px-4 py-2">
-          <h2 class="font-bold text-lg">Latest Payment</h2>
-          <a href="#" class="text-sm text-gray-500 hover:underline">View All</a>
-        </div>
-        <div class="p-4 space-y-3">
-          <div class="flex items-center justify-between bg-base-100 rounded-xl shadow-sm p-3">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">💳</div>
-              <div>
-                <p class="font-semibold">Electricity Bill</p>
-                <p class="text-xs text-gray-500">Today 01:44 AM</p>
-              </div>
-            </div>
-            <button class="btn btn-ghost btn-xs">⋮</button>
-          </div>
-          <div class="flex items-center justify-between bg-base-100 rounded-xl shadow-sm p-3">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">🏦</div>
-              <div>
-                <p class="font-semibold">Bank Deposit</p>
-                <p class="text-xs text-gray-500">Today 01:44 AM</p>
-              </div>
-            </div>
-            <button class="btn btn-ghost btn-xs">⋮</button>
-          </div>
-          <div class="flex items-center justify-between bg-base-100 rounded-xl shadow-sm p-3">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">📱</div>
-              <div>
-                <p class="font-semibold">Mobile Recharge</p>
-                <p class="text-xs text-gray-500">Today 01:44 AM</p>
-              </div>
-            </div>
-            <button class="btn btn-ghost btn-xs">⋮</button>
-          </div>
-          <div class="flex items-center justify-between bg-base-100 rounded-xl shadow-sm p-3">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">🔥</div>
-              <div>
-                <p class="font-semibold">Gas Bill</p>
-                <p class="text-xs text-gray-500">Today 01:44 AM</p>
-              </div>
-            </div>
-            <button class="btn btn-ghost btn-xs">⋮</button>
-          </div>
-        </div>
-      </div>
+      <div class="card bg-base-100 shadow-md rounded-2xl w-full fieldset justify-center items-center p-12">
+  <fieldset class="fieldset justify-center items-center">
+          
+          <!-- Email Field -->
+          <label class="label">
+            <span class="label-text text-black" >Amount</span>
+          </label>
+          <input type="input"   id="amountMoney" class="input input-bordered text-black" placeholder="input" />
 
+          <!-- PIN Field -->
+          <label class="label">
+            <span class="label-text text-black pt-1"  autocomplete="off">4 Digit Pin Number</span>
+          </label>
+          <input type="password" id="inputPassword" class="input input-bordered text-black" placeholder="****" maxlength="4" />         
+        </fieldset>
+        <button class="btn btn-neutral mt-4"  id="addMoney">Add your Money</button>
+      </div>
     </div>
   </div>
-
+  <script src="./Home-page-mobile-payment.js"></script>
 </body>
 </html>
