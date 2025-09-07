@@ -1,3 +1,6 @@
+
+
+
 document.getElementById("addMoney").addEventListener('click' , function(event){
 
             event.preventDefault();
@@ -53,3 +56,49 @@ document.getElementById("addMoney").addEventListener('click' , function(event){
 
 
 })
+
+
+
+
+
+// logout section 
+
+
+document.getElementById("log-out-panel").addEventListener('click' , function (){
+
+  window.location.href="./mobile-payment.html"
+
+
+
+
+})
+
+
+// add money section wrap page section
+
+
+document.getElementById("card").addEventListener("click", function() {
+    const content = document.getElementById("moneyForm");
+        content.classList.toggle("hidden"); // show
+  });
+
+  // cashout section wrap page section
+document.getElementById("cashout-section").addEventListener("click", function() {
+    const CashOutContent = document.getElementById("CashoutForm");
+
+    CashOutContent.classList.toggle("hidden");
+  });
+
+
+
+// transfer section in here  wrap page section
+
+document.getElementById("transferCard").addEventListener('click', function(){
+
+
+ const tranferTaka = document.getElementById('Transfer-Money')
+
+ tranferTaka.classList.toggle('hidden');
+
+
+});
