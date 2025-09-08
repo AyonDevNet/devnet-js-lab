@@ -16,7 +16,7 @@
       <!-- Balance Section -->
       <div class="flex justify-between items-center bg-base-100 shadow-md rounded-2xl p-4 w-full">
         <div >
-          <span ><h2 class="text-xl font-bold"  id="AddBalance">45000</h2></span>
+          <span ><h2 class="text-xl font-bold"  id="AddBalance">00</h2></span>
           <p class="text-sm text-gray-500">Available Balance</p>
         </div>
         <button class="btn btn-outline rounded-xl flex items-center gap-2" id="log-out-panel">
@@ -82,7 +82,7 @@
           <label class="label">
             <span class="label-text text-black" >Cash Oust</span>
           </label>
-          <input type="input"   id="amountMoney" class="input input-bordered text-black" placeholder="Cash Out" />
+          <input type="input"   id="cashOutMoney" class="input input-bordered text-black" placeholder="Cash Out" />
 
           <!-- PIN Field -->
           <label class="label">
@@ -90,7 +90,7 @@
           </label>
           <input type="password" id="inputPassword" class="input input-bordered text-black" placeholder="****" maxlength="4" />         
         </fieldset>
-        <button class="btn btn-neutral mt-4"  id="addMoney">Cash Out</button>
+        <button class="btn btn-neutral mt-4"  id="cashoutBtn">Cash Out</button>
       </div>
 
       <!-- cashout section end -->
@@ -105,15 +105,18 @@
           <label class="label">
             <span class="label-text text-black" >Transfer Money</span>
           </label>
-          <input type="input"   id="" class="input input-bordered text-black" placeholder="transfer Money" />
+          <input type="input"   id="tranferAmount" class="input input-bordered text-black" placeholder="Money Amount" />
+          <input type="input"   id="" class="input input-bordered text-black" placeholder="Bank Account Number" />
+           <input type="input"   id="" class="input input-bordered text-black" placeholder="Bank name" />
+           <input type="input"   id="" class="input input-bordered text-black" placeholder="Branch Name" />
 
           <!-- PIN Field -->
           <label class="label">
             <span class="label-text text-black pt-1"  autocomplete="off">4 Digit Pin Number</span>
           </label>
-          <input type="password" id="" class="input input-bordered text-black" placeholder="****" maxlength="4" />         
+          <input type="password" id="inputPassword" class="input input-bordered text-black" placeholder="****" maxlength="4" />         
         </fieldset>
-        <button class="btn btn-neutral mt-4"  id="addMoney">Transfer</button>
+        <button class="btn btn-neutral mt-4"  id="transferTaka">Transfer</button>
       </div>
      
       <!-- Money Transfer Money End -->
