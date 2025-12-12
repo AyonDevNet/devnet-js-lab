@@ -10,7 +10,10 @@ function App() {
       <Person />
       <Person />
       <Person />
-      <Jersey/>
+      <Jersey/> 
+    <Devteam name="Rajon" department="Technology"/>
+    <Devteam name="Majon" department="Technology"/>
+    <Devteam name="Kajon" department="Technology"/>
     </>
   )
 }
@@ -31,13 +34,55 @@ function Jersey(){
   const captain = 10;
   return (
   <>
-    <p>the captain's jersey number is {captain} </p>
-    <p>the winger's jersey number is {winger} </p>
+      <div className="Jersey">
+       <p>the captain's jersey number is {captain} </p> 
+
+     <p>the winger's jersey number is {winger} </p>
     <p>the stricker jersye number is {stricker}</p>
+
+     </div>
+        
    </>
 
   ) 
 
 }
+
+
+
+ function Devteam(props){
+
+ return (
+
+       <div className='Devteam'>
+
+           <h3>Devloper name:{props.name} </h3>
+           <h3>Department name: {props.department}</h3>
+
+       </div>
+     
+
+
+   
+ )
+ 
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default App

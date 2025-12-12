@@ -40,3 +40,26 @@
 .read-the-docs {
   color: #888;
 }
+
+.Jersey{
+ background: pink;
+  border-radius: 5px;
+  border: 3px solid black;
+  padding: 10px;
+  width: 300px;  
+
+
+
+}
+
+
+
+.Devteam{
+
+ background: rgb(210, 255, 192);
+  border-radius: 5px;
+  border: 3px solid black;
+  padding: 10px;
+  width: 300px;  
+
+}
